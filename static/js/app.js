@@ -41,11 +41,14 @@ function loadDashboard() {
       <span class="subtitle">${tile.subtitle}</span>
     `;
 
-    if (tile.url) {
-      button.addEventListener("click", () => {
+    button.addEventListener("click", () => {
+      if (tile.url) {
         window.location.href = tile.url;
-      });
-    }
+      } else {
+        window.location.href =
+          `pages/page.html?page=${encodeURIComponent(tile.id)}`;
+      }
+    });
 
     tilesContainer.appendChild(button);
   });
@@ -53,7 +56,6 @@ function loadDashboard() {
 
 updateClock();
 setInterval(updateClock, 1000);
-
 loadDashboard();
 
 document.getElementById("fullscreenBtn").addEventListener("click", () => {

@@ -3,45 +3,45 @@ const dashboardConfig = {
     name: "REBOOTWORTHY",
     subtitle: "Touch Dashboard",
     headline: "Old Tech. New Purpose.",
-    description: "A lightweight dashboard built for repurposed touchscreen devices."
+    description: "A lightweight, customizable dashboard for repurposed touchscreen devices."
   },
 
   tiles: [
     {
-      icon: "🖥️",
-      title: "Homelab",
-      subtitle: "Servers & services",
-      url: "pages/page.html?page=homelab"
+      id: "tile-one",
+      icon: "⭐",
+      title: "Tile One",
+      subtitle: "Customize me",
+      headline: "Your First Page",
+      description: "Change this content in static/js/config.js.",
+      url: ""
     },
     {
-      icon: "🏋️",
-      title: "Workout",
-      subtitle: "Training dashboard",
-      url: "pages/page.html?page=workout"
+      id: "tile-two",
+      icon: "🔧",
+      title: "Tile Two",
+      subtitle: "Customize me",
+      headline: "Your Second Page",
+      description: "Use this tile for anything you want.",
+      url: ""
     },
     {
-      icon: "🌐",
-      title: "Network",
-      subtitle: "Network status",
-      url: "pages/page.html?page=network"
-    },
-    {
+      id: "tile-three",
       icon: "📊",
-      title: "Monitoring",
-      subtitle: "System health",
-      url: "pages/page.html?page=monitoring"
+      title: "Tile Three",
+      subtitle: "Customize me",
+      headline: "Your Third Page",
+      description: "Add your own dashboard content here.",
+      url: ""
     },
     {
-      icon: "🎵",
-      title: "Media",
-      subtitle: "Music & entertainment",
-      url: "pages/page.html?page=media"
-    },
-    {
+      id: "tile-four",
       icon: "⚙️",
-      title: "Controls",
-      subtitle: "Quick actions",
-      url: "pages/page.html?page=controls"
+      title: "Tile Four",
+      subtitle: "Customize me",
+      headline: "Your Fourth Page",
+      description: "This dashboard is designed to be a blank canvas.",
+      url: ""
     }
   ]
 };
