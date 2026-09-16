@@ -11,37 +11,37 @@ const dashboardConfig = {
       icon: "🖥️",
       title: "Homelab",
       subtitle: "Servers & services",
-      url: "pages/homelab.html"
+      url: "pages/page.html?page=homelab"
     },
     {
       icon: "🏋️",
       title: "Workout",
       subtitle: "Training dashboard",
-      url: "pages/workout.html"
+      url: "pages/page.html?page=workout"
     },
     {
       icon: "🌐",
       title: "Network",
       subtitle: "Network status",
-      url: "pages/network.html"
+      url: "pages/page.html?page=network"
     },
     {
       icon: "📊",
       title: "Monitoring",
       subtitle: "System health",
-      url: "pages/monitoring.html"
+      url: "pages/page.html?page=monitoring"
     },
     {
       icon: "🎵",
       title: "Media",
       subtitle: "Music & entertainment",
-      url: "pages/media.html"
+      url: "pages/page.html?page=media"
     },
     {
       icon: "⚙️",
       title: "Controls",
       subtitle: "Quick actions",
-      url: "pages/controls.html"
+      url: "pages/page.html?page=controls"
     }
   ]
 };
