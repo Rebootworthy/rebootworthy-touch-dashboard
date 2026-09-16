@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0b0f;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  padding: 20px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #27272f;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.topbar p {
+  margin: 4px 0 0;
+  color: #a0a0aa;
+}
+
+.clock {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+#time {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#date {
+  color: #a0a0aa;
+  margin-top: 4px;
+}
+
+.dashboard {
+  flex: 1;
+  padding: 24px;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.hero h2 {
+  margin: 0 0 6px;
+  font-size: 26px;
+}
+
+.hero p {
+  margin: 0;
+  color: #a0a0aa;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.tile {
+  min-height: 150px;
+  border: 1px solid #2b2b34;
+  border-radius: 18px;
+  background: #15151c;
+  color: white;
+  padding: 22px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.1s ease;
+}
+
+.tile:active {
+  transform: scale(0.97);
+  background: #20202a;
+}
+
+.icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #9a9aa5;
+}
+
+footer {
+  padding: 14px 24px;
+  border-top: 1px solid #27272f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #888894;
+  font-size: 13px;
+}
+
+footer button {
+  border: 1px solid #33333d;
+  border-radius: 10px;
+  padding: 10px 16px;
+  background: #181820;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .tiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tile {
+    min-height: 130px;
+  }
+}
+
+@media (max-width: 500px) {
+  .topbar {
+    padding: 16px;
+  }
+
+  .dashboard {
+    padding: 16px;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+}
