@@ -10,8 +10,8 @@
 
   <header class="topbar">
     <div>
-      <h1>REBOOTWORTHY</h1>
-      <p>Touch Dashboard</p>
+      <h1 id="brandName">REBOOTWORTHY</h1>
+      <p id="brandSubtitle">Touch Dashboard</p>
     </div>
 
     <div class="clock">
@@ -21,59 +21,22 @@
   </header>
 
   <main class="dashboard">
-
     <section class="hero">
-      <h2>Old Tech. New Purpose.</h2>
-      <p>A lightweight dashboard built for repurposed touchscreen devices.</p>
+      <h2 id="heroHeadline">Old Tech. New Purpose.</h2>
+      <p id="heroDescription">
+        A lightweight dashboard built for repurposed touchscreen devices.
+      </p>
     </section>
 
-    <section class="tiles">
-
-      <button class="tile">
-        <span class="icon">🖥️</span>
-        <span class="title">Homelab</span>
-        <span class="subtitle">Servers & services</span>
-      </button>
-
-      <button class="tile">
-        <span class="icon">🏋️</span>
-        <span class="title">Workout</span>
-        <span class="subtitle">Training dashboard</span>
-      </button>
-
-      <button class="tile">
-        <span class="icon">🌐</span>
-        <span class="title">Network</span>
-        <span class="subtitle">Network status</span>
-      </button>
-
-      <button class="tile">
-        <span class="icon">📊</span>
-        <span class="title">Monitoring</span>
-        <span class="subtitle">System health</span>
-      </button>
-
-      <button class="tile">
-        <span class="icon">🎵</span>
-        <span class="title">Media</span>
-        <span class="subtitle">Music & entertainment</span>
-      </button>
-
-      <button class="tile">
-        <span class="icon">⚙️</span>
-        <span class="title">Controls</span>
-        <span class="subtitle">Quick actions</span>
-      </button>
-
-    </section>
-
+    <section class="tiles" id="tiles"></section>
   </main>
 
   <footer>
-    <span>Rebootworthy Touch Dashboard v0.1</span>
+    <span>Rebootworthy Touch Dashboard v0.2</span>
     <button id="fullscreenBtn">Fullscreen</button>
   </footer>
 
+  <script src="static/js/config.js"></script>
   <script src="static/js/app.js"></script>
 </body>
 </html>

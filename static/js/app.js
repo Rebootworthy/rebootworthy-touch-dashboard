@@ -15,8 +15,46 @@ function updateClock() {
     });
 }
 
+function loadDashboard() {
+  document.getElementById("brandName").textContent =
+    dashboardConfig.branding.name;
+
+  document.getElementById("brandSubtitle").textContent =
+    dashboardConfig.branding.subtitle;
+
+  document.getElementById("heroHeadline").textContent =
+    dashboardConfig.branding.headline;
+
+  document.getElementById("heroDescription").textContent =
+    dashboardConfig.branding.description;
+
+  const tilesContainer = document.getElementById("tiles");
+  tilesContainer.innerHTML = "";
+
+  dashboardConfig.tiles.forEach(tile => {
+    const button = document.createElement("button");
+    button.className = "tile";
+
+    button.innerHTML = `
+      <span class="icon">${tile.icon}</span>
+      <span class="title">${tile.title}</span>
+      <span class="subtitle">${tile.subtitle}</span>
+    `;
+
+    if (tile.url) {
+      button.addEventListener("click", () => {
+        window.location.href = tile.url;
+      });
+    }
+
+    tilesContainer.appendChild(button);
+  });
+}
+
 updateClock();
 setInterval(updateClock, 1000);
+
+loadDashboard();
 
 document.getElementById("fullscreenBtn").addEventListener("click", () => {
   if (!document.fullscreenElement) {
